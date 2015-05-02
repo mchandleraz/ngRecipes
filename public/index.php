@@ -8,30 +8,8 @@
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <!--
-       d888888o.       ,o888888o.        ,o888888o. 8888888 8888888888 ,o888888o.    8 8888        8
-     .`8888:' `88.    8888     `88.   . 8888     `88.     8 8888      8888     `88.  8 8888        8
-     8.`8888.   Y8 ,8 8888       `8. ,8 8888       `8b    8 8888   ,8 8888       `8. 8 8888        8
-     `8.`8888.     88 8888           88 8888        `8b   8 8888   88 8888           8 8888        8
-      `8.`8888.    88 8888           88 8888         88   8 8888   88 8888           8 8888        8
-       `8.`8888.   88 8888           88 8888         88   8 8888   88 8888           8 8888        8
-        `8.`8888.  88 8888           88 8888        ,8P   8 8888   88 8888           8 8888888888888
-    8b   `8.`8888. `8 8888       .8' `8 8888       ,8P    8 8888   `8 8888       .8' 8 8888        8
-    `8b.  ;8.`8888    8888     ,88'   ` 8888     ,88'     8 8888      8888     ,88'  8 8888        8
-     `Y8888P ,88P'     `8888888P'        `8888888P'       8 8888       `8888888P'    8 8888        8
 
-    8 888888888o       ,o888888o.  `8.`8888.      ,8'
-    8 8888    `88.  . 8888     `88. `8.`8888.    ,8'
-    8 8888     `88 ,8 8888       `8b `8.`8888.  ,8'
-    8 8888     ,88 88 8888        `8b `8.`8888.,8'
-    8 8888.   ,88' 88 8888         88  `8.`88888'
-    8 8888888888   88 8888         88  .88.`8888.
-    8 8888    `88. 88 8888        ,8P .8'`8.`8888.
-    8 8888      88 `8 8888       ,8P .8'  `8.`8888.
-    8 8888    ,88'  ` 8888     ,88' .8'    `8.`8888.
-    8 888888888P       `8888888P'  .8'      `8.`8888.
-    -->
-    <title>Scotch Box ♥ A Vagrant LAMP Stack for Beginners That Just Works</title>
+    <title>ngRecipes</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="yes" name="apple-mobile-web-app-capable">
@@ -48,321 +26,155 @@
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        ::selection {
-            background: #000;
-            color: #fff;
-        }
-        ::-moz-selection {
-            background: #000;
-            color: #fff;
-        }
-        body {
-            font-family: 'Pathway Gothic One', sans-serif;
-            height: 2000px;
-        }
-        a {
-            -webkit-transition: all 310ms ease;
-            -moz-transition: all 310ms ease;
-            transition: all 310ms ease;
-            text-decoration: none !important;
-        }
-        section {
-            position: relative;
-        }
-        #topper {
-            margin-top: 51px;
-            height: 450px;
-            text-align: center;
-        }
-        #topper svg {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-        }
-        #topper h1 {
-            position: absolute;
-            color: #fff;
-            left: 50%;
-            top: 50%;
-            -o-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            margin: 0;
-            font-size: 80px;
-            text-transform: uppercase;
-        }
-        #topper h1 i {
-            color: rgb(255, 157, 157);
-        }
-        article {
-            padding: 50px 0;
-        }
-        article table {
-            background: #e3e3e3;
-        }
-        article .content .wrap {
-            background: #05003D;
-            margin-bottom: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        article .content .wrap h2 {
-            margin: 10px 0 15px;
-            color: #fff;
-        }
-        article .content .wrap td {
-            font-size: 20px;
-        }
-        article .fa-times {
-            color: rgb(255, 69, 69);
-        }
-        article .fa-check {
-            color: rgb(0, 179, 64);
-        }
-        #site-footer {
-            background: #05003D;
-            padding: 100px 0;
-            color: #e3e3e3;
-            font-size: 35px;
-        }
-        #site-footer a {
-            color: #fff;
-        }
-        #site-footer a:hover {
-            color: rgb(144, 255, 184);
-        }
-    </style>
+
+    <base href="/">
 
 </head>
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Scotch Box</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav pull-right">
-                    <li><a href="http://box.scotch.io">Docs</a></li>
-                    <li><a href="http://github.com/scotch-io/scotch-box">Star on GitHub</a></li>
-                    <li><a href="http://scotch.io">Scotch.io</a></li>
-                    <li><a href="https://twitter.com/scotch_io">@scotch_io</a></li>
-                    <li><a href="https://twitter.com/nickforthought">@nickforthought</a></li>
+    <div ng-app="elasticRecipes" ng-controller="RecipeCtrl">
+
+        <section class="searchField">
+            <form ng-submit="search()">
+                <input type="text" ng-model="searchTerm">
+                <input type="submit" value="Search for recipes">
+            </form>
+        </section>
+
+        <section class="results">
+            <div class="no-recipes" ng-hide="recipes.length">No results</div>
+
+            <article class="recipe" ng-repeat="recipe in recipes" ng-cloak>
+                <h2><a ng-href="recipe.url">{{recipe.name}}</a></h2>
+                <ul>
+                    <li ng-repeat="ingredient in recipe.ingredients">{{ingredient}}</li>
                 </ul>
+                <p>
+                    {{recipe.description}}
+                    <a ng-href="{{recipe.url}}">... More at {{recipe.source}}</a>
+                </p>
+            </article>
+
+            <div class="load-more" ng-hide="allResults" ng-cloak>
+                <a ng-click="loadMore()">More ...</a>
             </div>
-        </div>
+
+        </section>
     </div>
 
-    <section id="topper" style="background-image: url('data:image/svg+xml;base64,<?php echo base64_encode('<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs id="defs4"><filter color-interpolation-filters="sRGB" id="filter3115"><feTurbulence type="fractalNoise" numOctaves="1" baseFrequency="0.9" id="feTurbulence3117"/><feColorMatrix result="result5" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4.15 " id="feColorMatrix3119"/><feComposite in2="result5" operator="in" in="SourceGraphic" result="result6" id="feComposite3121"/><feMorphology in="result6" operator="dilate" radius="3" result="result3" id="feMorphology3123"/></filter></defs><rect width="100%" height="100%" x="0" y="0" id="rect2985" fill="#000000"/><rect width="100%" height="100%" x="0" y="0" id="rect2985" style="fill:#0084ff;filter:url(#filter3115)"/></svg>'); ?>');">
-        <h1>Welcome to<br>Scotch Box <i class="fa fa-heart"></i></h1>
-    </section>
-
-
-    <article>
-        <div class="container">
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Installed Software</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>PHP Version</td>
-                            <td><?php echo phpversion(); ?></td>
-                        </tr>
-                        <?php
-                        $mysql_exists = FALSE;
-                        if (extension_loaded('mysql') or extension_loaded('mysqli')) :
-                            $mysql_exists = TRUE;
-                        endif;
-                        $mysqli = @new mysqli('localhost', 'root', 'root');
-                        $mysql_running = TRUE;
-                        if (mysqli_connect_errno()) {
-                            $mysql_running = FALSE;
-                        } else {
-                            $mysql_version = $mysqli->server_info;
-                        }
-
-                        $mysqli->close();
-                        ?>
-                        <tr>
-                            <td>MySQL is installed</td>
-                            <td><i class="fa fa-<?php echo ($mysql_exists ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>MySQL is connected</td>
-                            <td><i class="fa fa-<?php echo ($mysql_running ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-                        <tr>
-                            <td>MySQL Version</td>
-                            <td><?php echo ($mysql_running ? $mysql_version : 'N/A'); ?></td>
-                        </tr>
-                        <?php
-                        $memcached_running = FALSE;
-                        $memcached_version = FALSE;
-                        $memcached_version = FALSE;
-                        if (class_exists('Memcache')) :
-                            $m = new Memcached();
-                            if ($m->addServer('localhost', 11211)) {
-                                $memcached_running = TRUE;
-                                $memcached_version = $m->getVersion();
-                                $memcached_version = current($memcached_version);
-                            }
-                        endif;
-                        ?>
-                        <tr>
-                            <td>Memcached running</td>
-                            <td><i class="fa fa-<?php echo ($memcached_running ? 'check' : 'times'); ?>"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Memcached version</td>
-                            <td><?php echo ($memcached_version ? $memcached_version : 'N/A'); ?></td>
-                        </tr>
-
-                        <tr>
-                            <td>Ruby</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Composer</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Laravel Installer</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Git</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>cURL</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>GD and Imagick</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>NPM</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Grunt</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Bower</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Yeoman</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                        <tr>
-                            <td>Gulp</td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-
-                    </table>
-                </div>
-            </div>
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>PHP Modules</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <?php
-                        $modules = get_loaded_extensions();
-                        asort($modules);
-                        foreach ($modules as $extension) :
-                        ?>
-                        <tr>
-                            <td><?php echo $extension; ?></td>
-                            <td><i class="fa fa-check"></i></td>
-                        </tr>
-                        <?php endforeach; ?>
-                    </table>
-                </div>
-            </div>
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>Database Credentials</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>Hostname</td>
-                            <td>localhost</td>
-                        </tr>
-                        <tr>
-                            <td>Username</td>
-                            <td>root</td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td>root</td>
-                        </tr>
-                        <tr>
-                            <td>Database</td>
-                            <td>scotchbox</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="row content">
-                <div class="col-md-6 col-md-offset-3 wrap">
-                    <h2>SSH Credentials</h2>
-                    <table class="table table-responsive table-striped table-hover">
-                        <tr>
-                            <td>SSH Host</td>
-                            <td><?php echo $_SERVER['REMOTE_ADDR']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>SSH User</td>
-                            <td>vagrant</td>
-                        </tr>
-                        <tr>
-                            <td>SSH Password</td>
-                            <td>vagrant</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <footer id="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="http://box.scotch.io">Scotch Box</a> by <a href="http://scotch.io">scotch.io</a>.
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
     <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="bower_components/angularjs/angular.js"></script>
+    <script src="bower_components/elasticsearch/elasticsearch.angular.js"></script>
+
+    <script>
+        var elasticRecipes = angular.module('elasticRecipes', ['elasticsearch'], ['$locationProvider', function($locationProvider) {
+            $locationProvider.html5Mode(true);
+        }]);
+
+        elasticRecipes.controller('RecipeCtrl', ['recipeService', '$scope', '$location', function(recipes, $scope, $location){
+
+            var initChoices = [
+                'rendang',
+                'nasi goreng',
+                'pad thai',
+                'pizza',
+                'lasagne',
+                'ice cream',
+                'schnitzel',
+                'hummou'
+            ],
+            idx = Math.floor(Math.random() * initChoices.length);
+
+            $scope.recipes = [];        // results
+            $scope.page = 0;            // current page
+            $scope.allResults = false;  // is this all results?
+
+            // random search term, if one isn't provided
+            $scope.searchTerm = $location.search().q || initChoices[idx];
+
+            $scope.search = function() {
+                $scope.page = 0;
+                $scope.recipes = [];
+                $scope.allResults = false;
+                $location.search({
+                    'q':$scope.searchTerm
+                });
+                $scope.loadMore();
+            };
+
+            $scope.loadMore = function() {
+                recipes.search($scope.searchTerm, $scope.page++).then(function(results) {
+                    if (results.length !== 10) {
+                        $scope.allResults = true;
+                    }
+
+                    var ii = 0;
+
+                    for (; ii < results.length; ii++) {
+                        $scope.recipes.push(results[ii]);
+                    }
+
+                });
+            };
+
+            // load some recipes on initial run
+            $scope.loadMore();
+
+        }]);
+
+        elasticRecipes.factory('recipeService', ['$q', 'esFactory', '$location', function($q, elasticsearch, $location) {
+
+            var client = elasticsearch({
+                host: $location.host() + ':9200'
+            });
+
+            /**
+             * Given a term and offset, load another 10 recipes
+             *
+             * returns a promise
+             *
+             */
+            var search = function(term, offset) {
+                var deferred = $q.defer(),
+                    query = {
+                        match: {
+                            _all: term
+                        }
+                    };
+
+                client.search({
+                    index: 'recipes',
+                    type: 'recipe',
+                    body: {
+                        size: 10,
+                        from: (offset || 0) * 10,
+                        query: query
+                    }
+                }).then(function(result) {
+                    var ii = 0,
+                        hits_in,
+                        hits_out = [];
+
+                    hits_in = (result.hits || {}).hits || [];
+
+                    for (; ii < hits_in.length; ii++) {
+                        hits_out.push(hits_in[ii]._source);
+                    }
+
+                    deferred.resolve(hits_out);
+
+                }, deferred.reject);
+
+                return deferred.promise;
+
+            };
+
+            return {
+                search: search
+            };
+
+        }]);
+    </script>
 
 </body>
 </html>
